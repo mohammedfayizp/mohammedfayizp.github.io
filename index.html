@@ -2,43 +2,74 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <title>Your Name — Researcher</title>
+  <title>Mohammed Fayiz Parappan</title>
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <h1>Your Name</h1>
-    <p class="tagline">Title · Institution · Short phrase about research</p>
-  </header>
+  <div class="wrap">
+    <header class="top">
+      <div class="photo">
+        <!-- Upload photo.jpg to the repo and it will appear here -->
+        <img src="photo.jpg" alt="Your Name">
+      </div>
+      <div class="intro">
+        <h1>Your Name</h1>
+        <p class="role">PhD Student · Duke University</p>
+        <p class="blurb">I am a PhD student in the Department of Electrical and Computer Engineering at Duke University in the United States, supervised by Prof. Ricardo Henao."</p>
+        <p class="links">
+          <a href="CV.pdf" target="_blank">CV (PDF)</a> •
+          <a href="https://scholar.google.com" target="_blank">Google Scholar</a> •
+          <a href="https://github.com" target="_blank">GitHub</a>
+        </p>
+      </div>
+    </header>
 
-  <main>
-    <section id="about">
-      <h2>About</h2>
-      <p>Two-sentence bio. <a href="CV.pdf">Download CV (PDF)</a></p>
-    </section>
+    <main>
+      <section>
+        <h2>Research</h2>
+        <p>Brief description of main research themes. Give 2–3 concise bullets below.</p>
+        <ul>
+          <li>Project A — one sentence.</li>
+          <li>Project B — one sentence.</li>
+        </ul>
+      </section>
 
-    <section id="research">
-      <h2>Research</h2>
-      <p>Short description and 1–3 current projects.</p>
-    </section>
+      <section>
+        <h2>Selected publications</h2>
+        <ol class="pubs">
+          <!-- Replace these with your actual publication entries -->
+          <li>Author, Coauthor. <em>Paper Title</em>. <strong>Journal</strong>, 2023. <a href="#">PDF</a></li>
+          <li>Author, Coauthor. <em>Paper Title</em>. <strong>Conference</strong>, 2022. <a href="#">PDF</a></li>
+        </ol>
+        <p class="more"><a href="publications.html">Full publications</a> (optional)</p>
+      </section>
 
-    <section id="pubs">
-      <h2>Selected publications</h2>
-      <ul>
-        <li>Author et al., <em>Title</em>, Journal, Year — <a href="#">PDF</a></li>
-      </ul>
-    </section>
+      <section>
+        <h2>Contact</h2>
+        <p>
+          <span id="email">name [at] uni.edu</span>
+          <script>
+            // Simple email obfuscation: edit parts below
+            (function(){
+              var u = "your.name", d = "university.edu";
+              var e = u + "@" + d;
+              var el = document.getElementById("email");
+              if (el) el.innerHTML = '<a href="mailto:'+e+'">'+e+'</a>';
+            })();
+          </script>
+        </p>
+      </section>
+    </main>
 
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>Email: <span id="email">name [at] uni.edu</span></p>
-      <p>Links: <a href="#">Google Scholar</a> • <a href="#">GitHub</a></p>
-    </section>
-  </main>
+    <footer>
+      <small>© <span id="year"></span> Your Name — built with ❤️</small>
+    </footer>
+  </div>
 
-  <footer>
-    <small>© <span id="year">2026</span> Your Name</small>
-  </footer>
+  <script>
+    // set year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
