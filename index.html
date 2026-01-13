@@ -68,6 +68,42 @@
               <p><span class="research">&nbsp&nbsp Selected Papers: &nbsp&nbsp</span></p>
 
               <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+                <tr onmouseout="icml2025_stop()" onmouseover="icml2025_start()"> <!-- bgcolor="#ffffd0" -->
+                  <td style="padding:5px;width:25%;vertical-align:middle">
+                    <div class="one">
+                      <!-- <abbr class="badge"><b>ICML</b></abbr> -->
+                      <div class="two" id='icml2025_image'>
+                      <img src="images/mc-stl_intro.jpg" width="200px" height="160px">
+                      </div>
+                      <img src='images/mc-stl_model.jpg' width="200px" height="160px">
+                    </div>
+                    <script type="text/javascript">
+                      function icml2025_start() {
+                        document.getElementById('icml2025_image').style.opacity = "1";
+                      }
+                      function icml2025_stop() {
+                        document.getElementById('icml2025_image').style.opacity = "0";
+                      }
+                      icml2025_stop()
+                    </script>
+                  </td>
+                  <td style="padding:20px;width:75%;vertical-align:middle">
+                    <p><abbr><b>Machine Learning</b></abbr> &nbsp/&nbsp <abbr><b>Pluralistic Alignment</b></abbr></p>
+                    <!-- <br> -->
+                    <a href="https://www.arxiv.org/abs/2601.06631">
+                    <papertitle>Labels have Human Values: Value Calibration of Subjective Tasks</papertitle>
+                    </a>
+                    <br>
+                    <strong>Mohammed Fayiz Parappan</strong>, 
+                    <a href="https://scholar.google.com/citations?user=p_mm4-YAAAAJ&hl=en">Ricardo Henao 📧</a>.
+                    <br>
+                    <em>(Under Review)</em> 
+                    <br>
+                    <a href="https://www.arxiv.org/abs/2601.06631">paper</a>
+                    <p>We propose a framework to cluster subjective annotations by their underlying human values and calibrate model to each of unique value groups thereby formed</p>
+                  </td>
+                </tr>
                 
                 <tr onmouseout="icml2025_stop()" onmouseover="icml2025_start()"> <!-- bgcolor="#ffffd0" -->
                   <td style="padding:5px;width:25%;vertical-align:middle">
@@ -105,41 +141,7 @@
                   </td>
                 </tr>
 
-                  <tr onmouseout="icml2025_stop()" onmouseover="icml2025_start()"> <!-- bgcolor="#ffffd0" -->
-                  <td style="padding:5px;width:25%;vertical-align:middle">
-                    <div class="one">
-                      <!-- <abbr class="badge"><b>ICML</b></abbr> -->
-                      <div class="two" id='icml2025_image'>
-                      <img src="images/mc-stl_intro.jpg" width="200px" height="160px">
-                      </div>
-                      <img src='images/mc-stl_model.jpg' width="200px" height="160px">
-                    </div>
-                    <script type="text/javascript">
-                      function icml2025_start() {
-                        document.getElementById('icml2025_image').style.opacity = "1";
-                      }
-                      function icml2025_stop() {
-                        document.getElementById('icml2025_image').style.opacity = "0";
-                      }
-                      icml2025_stop()
-                    </script>
-                  </td>
-                  <td style="padding:20px;width:75%;vertical-align:middle">
-                    <p><abbr><b>Machine Learning</b></abbr> &nbsp/&nbsp <abbr><b>Pluralistic Alignment</b></abbr></p>
-                    <!-- <br> -->
-                    <a href="https://www.arxiv.org/abs/2601.06631">
-                    <papertitle>Labels have Human Values: Value Calibration of Subjective Tasks</papertitle>
-                    </a>
-                    <br>
-                    <strong>Mohammed Fayiz Parappan</strong>, 
-                    <a href="https://scholar.google.com/citations?user=p_mm4-YAAAAJ&hl=en">Ricardo Henao 📧</a>.
-                    <br>
-                    <em>(Under Review)</em> 
-                    <br>
-                    <a href="https://www.arxiv.org/abs/2601.06631">paper</a>
-                    <p>We propose a framework to cluster subjective annotations by their underlying human values and calibrate model to each of unique value groups thereby formed</p>
-                  </td>
-                </tr>
+                  
               
               </tbody></table>
 
